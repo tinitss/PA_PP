@@ -1,0 +1,75 @@
+/* General para todo el cuerpo */
+body {
+    font-family: "Green Market", sans-serif; /* Asegura una fuente de respaldo */
+    background-color: #ccebff;
+    display: flex;
+    flex-direction: column; /* Ordena los elementos en columnas */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    margin: 0;
+}
+
+/* Estilo para el encabezado */
+h2 {
+    margin: 0 0 20px 0; /* Espaciado inferior para separar del botón */
+    text-align: center;
+    font-size: 70px;
+}
+
+/* Contenedor del botón */
+#btn {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+/* Estilo para el botón */
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px; /* Límite máximo de ancho */
+    width: 80%; /* Ancho relativo ajustable */
+    height: auto;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0057af; /* Fondo azul */
+    color: white; /* Texto blanco */
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover y Active */
+button:hover {
+    background-color: #50a6ff;
+}
+
+button:active {
+    background-color: #003d80;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 45px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Ajuste para pantallas móviles */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 30px;
+    }
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

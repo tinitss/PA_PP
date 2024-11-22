@@ -1,0 +1,90 @@
+body {
+    font-family: "Green Market";
+    background-color: #ccebff;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; 
+    overflow: hidden; 
+}
+
+h2 {
+    font-size: 60px;
+    position: relative; 
+    top: 10px; 
+    margin: 0; 
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* El contenedor ocupa el ancho completo */
+    height: auto; /* Ajusta automáticamente la altura */
+    padding: 20px; /* Opcional: Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+/* Estilo del video */
+video {
+    width: 100%; /* El video ocupa todo el ancho del contenedor */
+    max-width: 550px; /* Define un ancho máximo para pantallas grandes */
+    height: auto; /* Mantén la relación de aspecto del video */
+    border-radius: 8px; /* Opcional: Bordes redondeados */
+}
+
+.boton-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* El contenedor ocupa el ancho completo */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ancho en porcentaje, se ajusta al tamaño de la pantalla */
+    height: auto; /* La altura se ajustará automáticamente */
+    max-width: 300px; /* Límite de ancho máximo para pantallas grandes */
+    padding: 10px 15px; /* Padding para hacer el botón más grande */
+    border: none;
+    border-radius: 8px;
+    background-color: #0057af; /* Fondo azul */
+    color: white; /* Texto blanco */
+    font-size: 10px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Ajuste en pantallas pequeñas */
+@media (max-width: 768px) {
+
+    h2{
+        font-size: 45px;
+    }
+    button {
+        font-size: 8px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+        padding: 8px 12px; /* Ajuste de padding para pantallas pequeñas */
+    }
+}
+
+/* Ajuste en pantallas móviles */
+@media (max-width: 480px) {
+    button {
+        font-size: 6px; /* Reduce aún más el tamaño de fuente en dispositivos móviles */
+        padding: 6px 10px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+}
+
+
+button:hover {
+    background-color: #50a6ff; /* Cambia a un azul más oscuro al pasar el cursor */
+}
+
+button:active {
+    background-color: #003d80; /* Azul aún más oscuro cuando se presiona */
+}
