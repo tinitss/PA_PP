@@ -1,49 +1,46 @@
 /* General para todo el cuerpo */
 body {
-    font-family: "Green Market", sans-serif; /* Asegura una fuente de respaldo */
+    font-family: "Green Market", sans-serif; 
     background-color: #ccebff;
     display: flex;
-    flex-direction: column; /* Ordena los elementos en columnas */
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
-    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
     margin: 0;
 }
 
-/* Estilo para el encabezado */
 h2 {
-    margin: 0 0 20px 0; /* Espaciado inferior para separar del botón */
+    margin: 0 0 20px 0; 
     text-align: center;
     font-size: 70px;
 }
 
-/* Contenedor del botón */
+
 #btn {
     display: flex;
-    justify-content: center; /* Centra el botón horizontalmente */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    justify-content: center; 
+    width: 100%; 
 }
 
-/* Estilo para el botón */
 button {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100px; /* Límite máximo de ancho */
-    width: 80%; /* Ancho relativo ajustable */
+    max-width: 100px; 
+    width: 80%; 
     height: auto;
     padding: 10px 13px;
     border: none;
     border-radius: 8px;
-    background-color: #0057af; /* Fondo azul */
-    color: white; /* Texto blanco */
+    background-color: #0057af; 
+    color: white; 
     font-size: 10px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-/* Hover y Active */
 button:hover {
     background-color: #50a6ff;
 }
@@ -52,7 +49,7 @@ button:active {
     background-color: #003d80;
 }
 
-/* Ajuste para pantallas pequeñas */
+
 @media (max-width: 768px) {
     h2 {
         font-size: 45px;
@@ -63,7 +60,6 @@ button:active {
     }
 }
 
-/* Ajuste para pantallas móviles */
 @media (max-width: 480px) {
     h2 {
         font-size: 30px;

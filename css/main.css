@@ -20,71 +20,71 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%; /* El contenedor ocupa el ancho completo */
-    height: auto; /* Ajusta automáticamente la altura */
-    padding: 20px; /* Opcional: Espaciado interno */
-    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    width: 65%; 
+    height: auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
-/* Estilo del video */
-video {
-    width: 100%; /* El video ocupa todo el ancho del contenedor */
-    max-width: 550px; /* Define un ancho máximo para pantallas grandes */
-    height: auto; /* Mantén la relación de aspecto del video */
-    border-radius: 8px; /* Opcional: Bordes redondeados */
+video { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
 }
 
 .boton-container {
+    bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* El contenedor ocupa el ancho completo */
-    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ancho en porcentaje, se ajusta al tamaño de la pantalla */
-    height: auto; /* La altura se ajustará automáticamente */
-    max-width: 300px; /* Límite de ancho máximo para pantallas grandes */
-    padding: 10px 15px; /* Padding para hacer el botón más grande */
+    width: 100%; 
+    height: auto; 
+    max-width: 300px; 
+    padding: 10px 13px; 
     border: none;
     border-radius: 8px;
-    background-color: #0057af; /* Fondo azul */
-    color: white; /* Texto blanco */
-    font-size: 10px; /* Tamaño de fuente más grande */
+    background-color: #0057af; 
+    color: white;
+    font-size: 10px; 
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-/* Ajuste en pantallas pequeñas */
 @media (max-width: 768px) {
 
     h2{
         font-size: 45px;
     }
     button {
-        font-size: 8px; /* Reduce el tamaño de fuente en pantallas pequeñas */
-        padding: 8px 12px; /* Ajuste de padding para pantallas pequeñas */
+        font-size: 8px; 
+        padding: 8px 16px; 
     }
 }
 
-/* Ajuste en pantallas móviles */
 @media (max-width: 480px) {
+    h2{
+        font-size: 30px;
+    }
     button {
-        font-size: 6px; /* Reduce aún más el tamaño de fuente en dispositivos móviles */
-        padding: 6px 10px; /* Ajusta el padding para pantallas más pequeñas */
+        font-size: 6px; 
+        padding: 6px 12px; 
     }
 }
 
 
 button:hover {
-    background-color: #50a6ff; /* Cambia a un azul más oscuro al pasar el cursor */
+    background-color: #50a6ff; 
 }
 
 button:active {
-    background-color: #003d80; /* Azul aún más oscuro cuando se presiona */
+    background-color: #003d80; 
 }
